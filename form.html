@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+</head>
+<body>
+  <header>
+    <h1 id="title">Formulário Trybe Travel</h1>
+  </header>
+  <form action="" method="get" id="main-form">
+    <label for="fullName">
+      <p>Nome completo:</p>
+      <input type="text" minlength="10" maxlength="50" id="fullName" required>
+    </label>
+    <label for="email">
+      <p>Email:</p>
+      <input type="email" name="input-email" id="email" minlength="10" maxlength="50" required>
+    </label>
+    <br><br>
+    <fieldset>
+      <legend style="text-align: center;">Destinos</legend>
+      <label for="city">Cidade</label>
+      <input type="radio" name="destinations" id="city" required>
+    <br>
+    <label for="camp">Campo</label>
+      <input type="radio" name="destinations" id="camp" required>
+    <br>
+    <label for="beach">Praia</label>
+      <input type="radio" name="destinations" id="beach" required>
+      <br>
+    <label for="montain">Montanha</label>
+      <input type="radio" name="destinations" id="montain"required>
+    </fieldset>
+    
+    
+    <label for="question">
+      <br><br>
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+      <textarea name="input-question" id="question" cols="30" rows="10" maxlength="500"></textarea>
+    </label>
+    <br><br>
+    <label for="date">
+      <p>Qual a melhor data para realizar sua viagem?
+      </p>
+      <input type="date" name="input-date" id="date">
+    </label>
+    <label for="promo">
+      <br><br>
+      <p>Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</p>
+      <label>Mas é claro!</label>
+      <input type="checkbox" name="input-promo" id="promo">
+    </label>
+    <label for="agreement">
+      <br><br>
+      <p>Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</p>
+    <label>Sim</label>
+      <input type="checkbox" name="input-agreement" id="agreement">
+      <br><br>
+    </label>
+    <button type="submit" id="submit-btn">Enviar</button>
+    <button type="reset" id="clear-btn">Limpar Informações</button>
+    <br><br>
+    <label for="confirm">Autoriza os envios da suas imagens:</label>
+    <input type="checkbox" name="input-confirm" id="confirm">
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
